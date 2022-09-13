@@ -1,0 +1,20 @@
+const prompt=require('prompt-sync')();
+
+const X1 = prompt('Digite o valor de X1: ');
+const Y1 = prompt('Digite o valor de Y1: ');
+const X2 = prompt('Digite o valor de X2: ');
+const Y2 = prompt('Digite o valor de Y2: ');
+
+const Nx1 = Number (X1);
+const Ny1 = Number (Y1);
+const Nx2 = Number (X2);
+const Ny2 = Number (Y2);
+
+const resultX = Nx1 - Nx2;
+const resultY = Ny1 - Ny2;
+const Dist1 = Math.pow (resultX , 2);
+const Dist2 = Math.pow (resultY , 2);
+const resultado1 = Dist1 + Dist2;
+const resultado= Math.sqrt (resultado1);
+
+console.log (`A distância entre eles é: ${resultado}`);

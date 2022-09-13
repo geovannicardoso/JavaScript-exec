@@ -1,0 +1,19 @@
+const prompt = require ('prompt-sync')();
+
+const textA = prompt ('Escreva um valor para A:');
+const textB = prompt ('Escreva um valor para B:');
+const textC = prompt ('Escreva um valor para C:');
+
+const numA = Number (textA);
+const numB = Number (textB);
+const numC = Number (textC);
+
+const total1 = numA + numB;
+const total2 = numB + numC;
+
+const result1 = Math.pow (total1, 2);
+const result2 = Math.pow (total2, 2);
+const resultado = (result1 + result2) / 2;
+
+console.log (`Resultado do calculo é ${resultado}`);
+

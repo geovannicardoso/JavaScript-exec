@@ -1,0 +1,12 @@
+const prompt = require('prompt-sync')();
+
+const segText = prompt('Me diga os segundos:');
+const seg = Number (segText);
+
+const horas = seg / 3600;
+const minutos = (seg % 3600) / 60;
+const segundos = (seg % 3600) % 60;
+
+console.log (`A fabirca funcionou: ${horas} horas`);
+console.log (`A fabrica funcionou: ${minutos} minutos`);
+console.log (`A quantidade total de: ${segundos}`);

@@ -1,0 +1,23 @@
+
+ const  prompt = require ('prompt-sync')();
+
+ const A = prompt ( 'Digite o valor de A:');
+ const B = prompt ( 'Digite o valor de B:');
+ const C = prompt ( 'Digite o valor de C:');
+ const D = prompt ( 'Digite o valor de D:');
+ const E = prompt ( 'Digite o valor de E:');
+ const F = prompt ( 'Digite o valor de F:');
+
+
+ const numA = Number ( A );
+ const numB = Number ( B );
+ const numC = Number ( C );
+ const numD = Number ( D );
+ const numE = Number ( E );
+ const numF = Number ( F );
+
+const x = ( numC * numE ) - ( numB * numF ) / ( numA * numE ) - ( numB * numD );
+const y = ( numA * numF ) - ( numC * numD ) / ( numA * numE ) - ( numB * numD );
+
+consola . log (`O resultado de Y é: ${ y }`);
+consola . log (`O resultado de X é: ${ x }`);

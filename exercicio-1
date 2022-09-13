@@ -1,0 +1,14 @@
+const prompt= require ('prompt-sync')();
+
+const anos = prompt ('Entre com a quantidade de anos:');
+const meses = prompt('Entre com a quantidade de meses:');
+const dias = prompt ('Entre com a quantidade de dias:');
+
+const anos1 = Number (anos)
+const meses1= Number (meses)
+const dias1 = Number (dias)
+
+const totalDias = anos1*365 + meses1*30 + dias1
+
+console.log(`você está vivo á: ${totalDias} dias`);
+

@@ -1,0 +1,14 @@
+const prompt = require('prompt-sync')();
+
+const Nota1 = prompt('Digite á primeira nota: ');
+const Nota2 = prompt('Digite á segunda nota: ');
+const Nota3 = prompt('Digite á terceira nota: ');
+
+const Nume1 = Number(Nota1);
+const Nume2 = Number(Nota2);
+const Nume3 = Number(Nota3);
+
+const result1 = (Nume1 + Nume2 + Nume3)* 10;
+const resultado = result1 / 3
+
+console.log (`Resultado final: ${resultado}`);
